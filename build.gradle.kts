@@ -14,7 +14,6 @@ base {
 }
 
 repositories {
-	mavenLocal()
 	maven {
 		name = "Terraformers"
 		url = uri("https://maven.terraformersmc.com/")
@@ -59,6 +58,8 @@ dependencies {
 }
 
 tasks.processResources {
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+
 	inputs.property("version", version)
 
 	filesMatching("fabric.mod.json") {

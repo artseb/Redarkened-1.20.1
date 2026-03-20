@@ -2,7 +2,6 @@ package github.artseb.redarkened.content.blocks
 
 import github.artseb.artlib.content.Recipe
 import github.artseb.artlib.content.RegistrableAsset
-import github.artseb.artlib.registry.Register
 import github.artseb.redarkened.Redarkened
 import github.artseb.redarkened.util.ModAssets
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
@@ -16,7 +15,6 @@ import net.minecraft.registry.Registries
 import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
 
-@Register
 class ElectrumBlock: RegistrableAsset<Block>(Identifier(Redarkened.MOD_ID, "electrum_block"), Registries.BLOCK) {
     private lateinit var itemAsset: ElectrumBlockItem
 

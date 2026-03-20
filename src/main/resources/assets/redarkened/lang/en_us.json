@@ -1,7 +1,11 @@
 {
+  "block.redarkened.corrupted_stone": "Corrupted Stone",
   "block.redarkened.electrum_block": "Electrum Block",
+  "block.redarkened.lead_block": "Lead Block",
+  "block.redarkened.mythril_block": "Mythril Block",
   "creative_mode_tab.redarkened.rpg_blocks": "Rpg Blocks",
   "creative_mode_tab.redarkened.rpg_main": "Rpg Main",
+  "item.redarkened.corrupted_stone": "Corrupted Stone",
   "item.redarkened.electrum_axe": "Electrum Axe",
   "item.redarkened.electrum_block": "Electrum Block",
   "item.redarkened.electrum_hammer": "Electrum Hammer",
@@ -16,6 +20,7 @@
   "item.redarkened.electrum_shovel": "Electrum Shovel",
   "item.redarkened.electrum_sword": "Electrum Sword",
   "item.redarkened.lead_axe": "Lead Axe",
+  "item.redarkened.lead_block": "Lead Block",
   "item.redarkened.lead_boots": "Lead Boots",
   "item.redarkened.lead_chestplate": "Lead Chestplate",
   "item.redarkened.lead_helmet": "Lead Helmet",
@@ -25,5 +30,6 @@
   "item.redarkened.lead_nugget": "Lead Nugget",
   "item.redarkened.lead_pickaxe": "Lead Pickaxe",
   "item.redarkened.lead_shovel": "Lead Shovel",
-  "item.redarkened.lead_sword": "Lead Sword"
+  "item.redarkened.lead_sword": "Lead Sword",
+  "item.redarkened.mythril_block": "Mythril Block"
 }
