@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pack_ingot",
+  "key": {
+    "#": {
+      "item": "redarkened:lead_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "redarkened:lead_ingot"
+  },
+  "show_notification": true
+}

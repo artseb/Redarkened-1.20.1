@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "redarkened",
+	"version": "${version}",
+	"name": "Redarkened",
+	"description": "A souls-borne RPG remaster",
+	"authors": [
+		"ArtSeb"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/redarkened/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "github.artseb.redarkened.Redarkened",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "github.artseb.redarkened.RedarkenedClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "github.artseb.redarkened.RedarkenedDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"redarkened.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}

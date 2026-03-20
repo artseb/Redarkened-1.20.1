@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "redarkened:armor/electrum_knight_armor"
+  }
+}

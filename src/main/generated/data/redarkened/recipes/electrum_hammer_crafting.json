@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "tools",
+  "key": {
+    "b": {
+      "item": "redarkened:electrum_block"
+    },
+    "i": {
+      "item": "redarkened:electrum_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "bib",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "item": "redarkened:electrum_hammer"
+  },
+  "show_notification": true
+}

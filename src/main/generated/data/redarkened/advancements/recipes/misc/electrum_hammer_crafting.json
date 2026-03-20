@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item.redarkened.electrum_hammer": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "redarkened:electrum_hammer"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "redarkened:electrum_hammer_crafting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_item.redarkened.electrum_hammer",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "redarkened:electrum_hammer_crafting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

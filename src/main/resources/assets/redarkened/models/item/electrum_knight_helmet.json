@@ -1,0 +1,6 @@
+{
+  "parent": "redarkened:item/generic_knight_helmet",
+  "textures": {
+    "layer0": "redarkened:item/electrum_knight_armor"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item.redarkened.electrum_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "redarkened:electrum_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "redarkened:electrum_hoe_crafting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_item.redarkened.electrum_hoe",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "redarkened:electrum_hoe_crafting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

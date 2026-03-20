@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nuggets",
+  "ingredients": [
+    {
+      "item": "redarkened:electrum_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "redarkened:electrum_nugget"
+  }
+}

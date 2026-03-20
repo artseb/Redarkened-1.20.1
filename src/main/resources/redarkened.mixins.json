@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "github.artseb.redarkened.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ExampleMixin",
+    "LivingEntityMixin",
+    "PlayerEntityMixin",
+    "ServerPlayerEntityMixin"
+  ],
+  "client": [
+    "client.BipedEntityRendererMixin",
+    "client.ExampleClientMixin",
+    "client.HeldItemRendererMixin",
+    "client.PlayerEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

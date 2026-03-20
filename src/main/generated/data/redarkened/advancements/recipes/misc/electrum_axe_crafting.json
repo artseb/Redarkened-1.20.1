@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item.redarkened.electrum_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "redarkened:electrum_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "redarkened:electrum_axe_crafting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_item.redarkened.electrum_axe",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "redarkened:electrum_axe_crafting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item.redarkened.electrum_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "redarkened:electrum_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "redarkened:electrum_pickaxe_crafting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_item.redarkened.electrum_pickaxe",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "redarkened:electrum_pickaxe_crafting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

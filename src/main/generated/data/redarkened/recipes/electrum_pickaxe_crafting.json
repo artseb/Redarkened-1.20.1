@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "tools",
+  "key": {
+    "i": {
+      "item": "redarkened:electrum_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "iii",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "item": "redarkened:electrum_pickaxe"
+  },
+  "show_notification": true
+}

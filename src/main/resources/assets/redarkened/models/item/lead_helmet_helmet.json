@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "artsebs_rpg_mod:item/lead_helmet_helmet"
+  }
+}

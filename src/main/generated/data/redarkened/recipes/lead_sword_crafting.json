@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "tools",
+  "key": {
+    "i": {
+      "item": "redarkened:lead_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " i ",
+    " s "
+  ],
+  "result": {
+    "item": "redarkened:lead_sword"
+  },
+  "show_notification": true
+}
