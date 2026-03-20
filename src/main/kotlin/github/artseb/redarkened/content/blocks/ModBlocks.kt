@@ -1,15 +1,19 @@
 package github.artseb.redarkened.content.blocks
 
+import github.artseb.artlib.content.Recipe
 import github.artseb.artlib.content.RegistrableAsset
 import github.artseb.artlib.content.RegistrableBlock
 import github.artseb.artlib.registry.Register
 import github.artseb.artlib.registry.Registrable
 import github.artseb.artlib.system.block.BlockModel
 import github.artseb.redarkened.Redarkened
+import github.artseb.redarkened.util.ModAssets
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
+import net.minecraft.item.ItemStack
+import net.minecraft.recipe.Ingredient
 import net.minecraft.registry.Registries
 import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
@@ -17,18 +21,38 @@ import net.minecraft.util.Identifier
 @Register
 class ModBlocks : Registrable {
     val blocks = arrayOf(
-        SimpleBlock(
+        object : SimpleBlock(
             Identifier(Redarkened.MOD_ID, "electrum_block"),
             Block(FabricBlockSettings.create()
                 .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.METAL)),
             BlockModel.CubeAll
-        ),
-        SimpleBlock(
+        ) {
+            override fun initialize() {
+                super.initialize()
+                recipes.add(Recipe.Shaped(
+                    listOf("###", "###", "###"),
+                    mapOf('#' to Ingredient.ofItems(ModAssets.getItem("electrum_ingot")),),
+                    ItemStack(instance, 1),
+                    "pack"
+                ))
+            }
+        },
+        object : SimpleBlock(
             Identifier(Redarkened.MOD_ID, "lead_block"),
             Block(FabricBlockSettings.create()
                 .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.METAL)),
             BlockModel.CubeAll
-        ),
+        ) {
+            override fun initialize() {
+                super.initialize()
+                recipes.add(Recipe.Shaped(
+                    listOf("###", "###", "###"),
+                    mapOf('#' to Ingredient.ofItems(ModAssets.getItem("lead_ingot")),),
+                    ItemStack(instance, 1),
+                    "pack"
+                ))
+            }
+        },
         SimpleBlock(
             Identifier(Redarkened.MOD_ID, "mythril_block"),
             Block(FabricBlockSettings.create()
@@ -43,7 +67,7 @@ class ModBlocks : Registrable {
         )
     )
 
-    inner class SimpleBlock(id: Identifier, val block: Block, blockModel: BlockModel, tags: Array<String>? = null, group: String? = null
+    open inner class SimpleBlock(id: Identifier, val block: Block, blockModel: BlockModel, tags: Array<String>? = null, group: String? = null
     ) : RegistrableBlock(id, blockModel, tags, group) {
         private lateinit var itemAsset: ModBlockItem
 
