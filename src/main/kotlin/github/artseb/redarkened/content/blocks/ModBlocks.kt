@@ -10,6 +10,8 @@ import github.artseb.redarkened.Redarkened
 import github.artseb.redarkened.util.ModAssets
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
+import net.minecraft.block.FurnaceBlock
+import net.minecraft.data.client.TexturedModel
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
@@ -17,6 +19,7 @@ import net.minecraft.recipe.Ingredient
 import net.minecraft.registry.Registries
 import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
+import net.minecraft.util.math.Direction
 
 @Register
 class ModBlocks : Registrable {
@@ -64,7 +67,45 @@ class ModBlocks : Registrable {
             Block(FabricBlockSettings.create()
                 .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
             BlockModel.CubeAll
-        )
+        ),
+        SimpleBlock(
+            Identifier(Redarkened.MOD_ID, "scratched_corrupted_stone"),
+            Block(FabricBlockSettings.create()
+                .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            BlockModel.CubeAll
+        ),
+        SimpleBlock(
+            Identifier(Redarkened.MOD_ID, "vein_corrupted_stone"),
+            Block(FabricBlockSettings.create()
+                .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            BlockModel.CubeAll
+        ),
+        SimpleBlock(
+            Identifier(Redarkened.MOD_ID, "corrupted_bricks"),
+            Block(FabricBlockSettings.create()
+                .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            BlockModel.CubeAll
+        ),
+        SimpleBlock(
+            Identifier(Redarkened.MOD_ID, "scratched_corrupted_bricks"),
+            Block(FabricBlockSettings.create()
+                .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            BlockModel.CubeAll
+        ),
+        SimpleBlock(
+            Identifier(Redarkened.MOD_ID, "vein_corrupted_bricks"),
+            Block(FabricBlockSettings.create()
+                .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            BlockModel.CubeAll
+        ),
+        SimpleBlock(
+            Identifier(Redarkened.MOD_ID, "void_furnace"),
+            FurnaceBlock(FabricBlockSettings.create()
+                .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            BlockModel.Custom { generator, block ->
+                generator.registerSingleton(block, TexturedModel.ORIENTABLE)
+            }
+        ),
     )
 
     open inner class SimpleBlock(id: Identifier, val block: Block, blockModel: BlockModel, tags: Array<String>? = null, group: String? = null

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "redarkened:block/void_furnace_front_on",
+    "side": "redarkened:block/void_furnace_side",
+    "top": "redarkened:block/void_furnace_top"
+  }
+}

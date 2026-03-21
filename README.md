@@ -73,7 +73,7 @@ Or if you wanna work on the mod, contact me on [discord](https://discord.com/use
 ### Credits
 
 - [Unused textures repo](https://github.com/malcolmriley/unused-textures/tree/master)
-- [MichealCreeper](https://www.artstation.com/michaelcreeper)
+- [MichealCreeper's mob story inspiration](https://www.artstation.com/michaelcreeper)
 
 ---
 
