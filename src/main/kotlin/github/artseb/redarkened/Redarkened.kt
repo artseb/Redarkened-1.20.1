@@ -1,5 +1,6 @@
 package github.artseb.redarkened
 
+import github.artseb.artlib.ArtLib
 import github.artseb.artlib.registry.FileDiscovery
 import github.artseb.redarkened.command.ClassCommand
 import github.artseb.redarkened.system.classes.ClassApplier
@@ -32,6 +33,8 @@ object Redarkened : ModInitializer {
 	}
 
 	override fun onInitialize() {
+		ArtLib.changeDebugMode(DEBUG_MODE)
+
 		val classes = FileDiscovery.scan("github.artseb.redarkened.content")
 		val registered = mutableListOf<Any>()
 

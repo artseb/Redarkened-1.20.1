@@ -55,6 +55,40 @@ enum class ArmorMaterials(
         Supplier {
             Ingredient.ofItems(ModAssets.getItem("lead_ingot"))
         }
+    ),
+    MYTHRIL(
+        "mythril",
+        37,
+        Util.make(EnumMap(ArmorItem.Type::class.java), Consumer { map ->
+            map[ArmorItem.Type.BOOTS] = 3
+            map[ArmorItem.Type.LEGGINGS] = 6
+            map[ArmorItem.Type.CHESTPLATE] = 8
+            map[ArmorItem.Type.HELMET] = 3
+        }),
+        15,
+        SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+        3.0f,
+        0.1f,
+        Supplier {
+            Ingredient.ofItems(ModAssets.getItem("mythril_ingot"))
+        }
+    ),
+    NIHILITE(
+        "nihilite",
+        37,
+        Util.make(EnumMap(ArmorItem.Type::class.java), Consumer { map ->
+            map[ArmorItem.Type.BOOTS] = 3
+            map[ArmorItem.Type.LEGGINGS] = 6
+            map[ArmorItem.Type.CHESTPLATE] = 8
+            map[ArmorItem.Type.HELMET] = 3
+        }),
+        15,
+        SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+        3.0f,
+        0.1f,
+        Supplier {
+            Ingredient.ofItems(ModAssets.getItem("nihilite_ingot"))
+        }
     );
 
     private val repairIngredient: Lazy<Ingredient> = Lazy<Ingredient>(repairIngredient)

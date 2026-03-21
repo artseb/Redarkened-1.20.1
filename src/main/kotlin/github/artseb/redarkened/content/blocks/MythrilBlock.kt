@@ -14,8 +14,8 @@ import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
 
 @Register
-class ElectrumBlock: BlockCreator(
-    Identifier(Redarkened.MOD_ID, "electrum_block"),
+class MythrilBlock: BlockCreator(
+    Identifier(Redarkened.MOD_ID, "mythril_block"),
     Block(FabricBlockSettings.create()
         .requiresTool().strength(50.0F, 1200.0F).sounds(BlockSoundGroup.METAL)),
     BlockModel.CubeAll
@@ -24,7 +24,7 @@ class ElectrumBlock: BlockCreator(
         super.initialize()
         recipes.add(Recipe.Shaped(
             listOf("###", "###", "###"),
-            mapOf('#' to Ingredient.ofItems(ModAssets.getItem("electrum_ingot"))),
+            mapOf('#' to Ingredient.ofItems(ModAssets.getItem("mythril_ingot"))),
             ItemStack(instance, 1),
             "pack"
         ))

@@ -54,7 +54,7 @@ dependencies {
 	modImplementation("software.bernie.geckolib:geckolib-fabric-$minecraftVersion:${providers.gradleProperty("geckolib_version").get()}")
 	implementation("com.eliotlash.mclib:mclib:20")
 
-	modImplementation("github.artseb:artlib:${providers.gradleProperty("artlib_version").get()}")
+	modImplementation(files("../artlib-1.20.1/build/libs/artlib-${providers.gradleProperty("artlib_version").get()}.jar"))
 }
 
 tasks.processResources {
@@ -93,6 +93,14 @@ tasks.jar {
 	from("LICENSE") {
 		rename { "${it}_${base.archivesName.get()}" }
 	}
+}
+
+configurations.all {
+	resolutionStrategy.cacheChangingModulesFor(0, TimeUnit.SECONDS)
+}
+
+tasks.named("runClient") {
+	dependsOn(gradle.includedBuild("artlib-1.20.1").task(":remapJar"))
 }
 
 // configure the maven publication

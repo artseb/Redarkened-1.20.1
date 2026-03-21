@@ -37,6 +37,28 @@ enum class ToolMaterials(
         Supplier {
             Ingredient.ofItems(ModAssets.getItem("lead_ingot"))
         }
+    ),
+    MYTHRIL(
+        "mythril",
+        MiningLevels.NETHERITE,
+        3260,
+        10.0f,
+        5.0f,
+        18,
+        Supplier {
+            Ingredient.ofItems(ModAssets.getItem("mythril_ingot"))
+        }
+    ),
+    NIHILITE(
+        "nihilite",
+        MiningLevels.NETHERITE,
+        3260,
+        10.0f,
+        5.0f,
+        18,
+        Supplier {
+            Ingredient.ofItems(ModAssets.getItem("nihilite_ingot"))
+        }
     );
 
     private val repairIngredient: Lazy<Ingredient> = Lazy<Ingredient>(repairIngredient)
