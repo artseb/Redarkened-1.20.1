@@ -66,6 +66,8 @@ This project is in active development. If you'd like to contribute, please open 
 
 Bug reports and feedback are very welcome.
 
+Or if you wanna work on the mod, contact me on [discord](https://discord.com/users/595131602556944384)
+
 ---
 
 ### Credits
