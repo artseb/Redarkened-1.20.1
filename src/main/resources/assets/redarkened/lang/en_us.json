@@ -9,6 +9,7 @@
   "block.redarkened.vein_corrupted_bricks": "Vein Corrupted Bricks",
   "block.redarkened.vein_corrupted_stone": "Vein Corrupted Stone",
   "block.redarkened.void_furnace": "Void Furnace",
+  "block_entity_type.redarkened.void_furnace_entity": "Void Furnace Entity",
   "creative_mode_tab.redarkened.rpg_blocks": "Rpg Blocks",
   "creative_mode_tab.redarkened.rpg_main": "Rpg Main",
   "item.redarkened.corrupted_bricks": "Corrupted Bricks",
@@ -69,5 +70,8 @@
   "item.redarkened.scratched_corrupted_stone": "Scratched Corrupted Stone",
   "item.redarkened.vein_corrupted_bricks": "Vein Corrupted Bricks",
   "item.redarkened.vein_corrupted_stone": "Vein Corrupted Stone",
-  "item.redarkened.void_furnace": "Void Furnace"
+  "item.redarkened.void_furnace": "Void Furnace",
+  "menu.redarkened.smelter": "Smelter",
+  "particle_type.redarkened.nihilite_ash": "Nihilite Ash",
+  "sound_event.redarkened.block.void_furnace.ambient": "Void Furnace Crackling"
 }

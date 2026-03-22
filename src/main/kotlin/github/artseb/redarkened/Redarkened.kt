@@ -3,6 +3,7 @@ package github.artseb.redarkened
 import github.artseb.artlib.ArtLib
 import github.artseb.artlib.registry.FileDiscovery
 import github.artseb.redarkened.command.ClassCommand
+import github.artseb.redarkened.content.sounds.VoidFurnaceSounds
 import github.artseb.redarkened.system.classes.ClassApplier
 import github.artseb.redarkened.system.classes.PlayerClassStorage
 import net.fabricmc.api.ModInitializer

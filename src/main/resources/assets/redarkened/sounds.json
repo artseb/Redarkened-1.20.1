@@ -1,0 +1,11 @@
+{
+  "block.void_furnace.ambient": {
+    "sounds": [
+      {
+        "attenuation_distance": 10,
+        "name": "portal/portal"
+      }
+    ],
+    "category": "block"
+  }
+}
